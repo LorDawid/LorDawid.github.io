@@ -5,7 +5,7 @@ const arrowImage = document.getElementById("arrow");
 arrowImage.ondragstart = function () { return false; }
 
 const snapper = document.getElementById("snapper");
-const project = document.getElementById("project");
+const project = document.getElementById("projekty");
 
 function placeSnapper() {
   var top = project.getBoundingClientRect().y;  

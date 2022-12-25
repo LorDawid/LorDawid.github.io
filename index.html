@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="snap-mandatory snap-y">
+<html lang="en" class="snap-mandatory snap-y scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -38,7 +38,7 @@
 
   <div id="snapper" class="absolute snap-start"></div>
 
-  <div class="snap-start w-full h-screen flex bg-gray-700">
+  <div id="omnie" class="snap-start w-full h-screen flex bg-gray-700">
     <div class="grid text-white w-full place-items-center">
       <div class="grid text-center font-semibold">
         <h1 class="text-4xl">O mnie</h1>
@@ -50,21 +50,26 @@
         </span>
         <div class="font-normal">
           <br><a href="https://www.github.com/lordawid" class="transition-colors inline-flex items-center bg-white hover:bg-slate-300 text-black p-1 m-1 rounded">
-            <img src="github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Github
+            <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Github
           </a>
           <br><a href="https://stackoverflow.com/users/18104054/" class="transition-colors inline-flex items-center bg-white hover:bg-slate-300 text-black p-1 m-1 rounded">
-            <img src="logo-stackoverflow.png" class="max-w-4 max-h-4 pr-2"> StackOverflow
+            <img src="loga/logo-stackoverflow.png" class="max-w-4 max-h-4 pr-2"> StackOverflow
           </a>
         </div>
       </div>
     </div>
     <div class="hidden w-full sm:inline-flex">
       <img src="bg.png" id="blob">
-      <div class="bg-white w-full"></div>
+      <div class="bg-white w-full grid items-end">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="rgb(55 65 81)" d="M39.8,-57.7C53.7,-53,68.6,-45.6,68.6,-34.5C68.6,-23.5,53.7,-9,50.4,6.5C47.1,22,55.2,38.5,52.7,51.1C50.2,63.7,37,72.5,24.6,69.7C12.2,66.9,0.5,52.4,-13.2,47.3C-26.9,42.1,-42.6,46.4,-49.9,41.4C-57.2,36.4,-55.9,22.1,-54.4,9.9C-52.9,-2.3,-51.1,-12.4,-46.9,-21.3C-42.7,-30.2,-36,-37.9,-27.7,-45.1C-19.5,-52.3,-9.7,-59.1,1.6,-61.6C13,-64.1,25.9,-62.3,39.8,-57.7Z" transform="translate(100 100)" />
+        </svg>
+      </div>
+      </div>
     </div>
   </div>
 
-  <div class="snap-start w-full min-h-screen pt-12">
+  <div id="umiejetnosci" class="snap-start w-full min-h-screen pt-12">
     <div class="text-center p-10">
       <h1 class="text-4xl font-bold">Umiejętności</h1>
     </div>
@@ -113,24 +118,25 @@
         </p>
       </div>
       <div class="w-64 h-64 rounded-2xl p-5 bg-gray-700">
-        <h1 class="text-center text-xl font-semibold">Komputery</h1>
+        <h1 class="text-center text-xl font-semibold">Praca zepołowa</h1>
         <p class="text-justify">
-          Wiem, jak działają, i z czego się składają zarówno komputery, jak i systemy operacyjne,
-          potrafię wykorzystać ich pełny potencjał
+          Potrafię korzystać z platformy GitHub, zarządzać różnymi repozytoriami, korzystać
+          z Git CLI, zgłaszać błędy, używać innych platform takich jak Trello do tworzenia
+          roadmapów.
         </p>
       </div>
       <div class="w-64 h-64 rounded-2xl p-5 bg-gray-700">
-        <h1 class="text-center text-xl font-semibold">Deep down</h1>
+        <h1 class="text-center text-xl font-semibold">Komunikacja</h1>
         <p class="text-justify">
-          Potrafię szybko diagnozować i rozwiązywać problemy, w tym efektywnie korzystać z
-          serwisów takich jak Google i StackOverflow, aby pomóc w rozwiązaniu problemu
+          Jestem bardzo dobry z języka angielskiego, piszę programy (tak jak się powinno)
+          standardowo, w języku angielskim, umiem się efektywnie porozumiewać.
         </p>
       </div>
     </div>
   </div>
 
-  <div id="project" class="grid place-items-center snap-start w-full h-screen text-white bg-gray-700">
-    <h1 class="text-4xl sm:text-8xl font-bold">Projekty</h1>
+  <div id="projekty" class="grid place-items-center snap-start w-full h-screen text-white bg-gray-700">
+    <h1 class="text-7xl sm:text-8xl font-bold">Projekty</h1>
   </div>
 
   <div class="lg:flex place-items-center snap-start w-full min-h-screen text-white bg-gray-700 pt-12 sm:pt-0">
@@ -143,20 +149,97 @@
         czasu, zoomowanie scrollem przesuwanie się myszką, i przede wszystkim tworzenie 
         nowych planet, które w ciekawy sposób zmieniają trajektoria planet.
       </p>
+      <div class="inline-flex bg-gray-800 p-2 rounded-xl font-mono items-center mt-4">
+        <img src="loga/python.png" class="h-6"><span class="ml-2 ">Python 3.9</span>
+        <div class="bg-slate-500 ml-2 mr-2 w-[2px] h-6"></div>
+        <img src="loga/pygame.png" class="h-6"><span class="ml-2">PyGame 2.1.2</span>
+      </div>
       <div class="font-normal pb-4">
         <br><a class="transition-colors inline-flex items-center bg-slate-300 text-slate-500 cursor-not-allowed p-1 m-1 rounded">
-          <img src="github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Kod źródłowy niepubliczny
+          <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Kod źródłowy niepubliczny
         </a>
         <br><a href="https://github.com/techwithtim/Python-Planet-Simulation" class="transition-colors inline-flex items-center bg-white hover:bg-slate-300 text-black p-1 m-1 rounded">
-          <img src="github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Github (oryginalny projekt)
+          <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Github (oryginalny projekt)
         </a>
       </div>
     </div>
     <div class="lg:w-1/2 lg:h-full">
-      <img src="planets.gif" class="irregular-border lg:h-screen object-cover">
+      <img src="projekty/planets.gif" class="irregular-border lg:h-screen object-cover">
     </div>
   </div>
 
+  <div class="lg:flex place-items-center snap-start w-full min-h-screen text-white bg-gray-700 pt-12 sm:pt-0">
+    <div class="w-full lg:w-1/2 lg:h-full text-center pt-10">
+      <h1 class="font-bold text-6xl">Projektant</h1>
+      <p class="font-semibold pt-10 pl-5 pr-5 lg:pl-20 lg:pr-20 text-xl">
+        Początkowo stworzony w celu pomocy w tworzeniu bransoletek, ten program
+        graficzny pozwala na zapisywanie i odczytywanie projektów, ma takie funkcje
+        jak autozapis, wypełnianie, siatkę, odbijanie według osi symetrii. 
+        Był stworzony od zera za pomocą biblioteki PyQt5, cały projekt jest
+        dostępny na platformie GitHub.
+      </p>
+      <div class="inline-flex bg-gray-800 p-2 rounded-xl font-mono items-center mt-4">
+        <img src="loga/python.png" class="h-6"><span class="ml-2 ">Python 3.9</span>
+        <div class="bg-slate-500 ml-2 mr-2 w-[2px] h-6"></div>
+        <img src="loga/qt.png" class="h-6"><span class="ml-2">Qt 5</span>
+      </div>
+      <div class="font-normal pb-4">
+        <br><a href="https://github.com/LorDawid/designer" class="transition-colors inline-flex items-center bg-white hover:bg-slate-300 text-black p-1 m-1 rounded">
+          <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Kod źródłowy
+        </a>
+      </div>
+    </div>
+    <div class="lg:w-1/2 lg:h-full">
+      <img src="projekty/projektant.gif" class="irregular-border lg:h-screen object-cover">
+    </div>
+  </div>
+
+  <div class="lg:flex place-items-center snap-start w-full min-h-screen text-white bg-gray-700 pt-12 sm:pt-0">
+    <div class="w-full lg:w-1/2 lg:h-full text-center pt-10">
+      <h1 class="font-bold text-6xl">Przeglądarka</h1>
+      <p class="font-semibold pt-10 pl-5 pr-5 lg:pl-20 lg:pr-20 text-xl">
+        Stworzona za pomocą biblioteki PySide6, wykorzystuje wbudowany widżet
+        przeglądarki. Korzysta z tzw. pionowych kart, nie wyświetlają się one
+        u góry przeglądarki jak zwykle, a wyświetlają się na jej boku. Korzysta
+        z akrylicznego tła okna, wprowadzonego w Windowsie 10.
+      </p>
+      <div class="inline-flex bg-gray-800 p-2 rounded-xl font-mono items-center mt-4">
+        <img src="loga/python.png" class="h-6"><span class="ml-2 ">Python 3.10</span>
+        <div class="bg-slate-500 ml-2 mr-2 w-[2px] h-6"></div>
+        <img src="loga/qt.png" class="h-6"><span class="ml-2">Qt 6</span>
+      </div>
+      <div class="font-normal pb-4">
+        <br><a class="transition-colors inline-flex items-center bg-slate-300 text-slate-500 cursor-not-allowed p-1 m-1 rounded">
+          <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Kod źródłowy niepubliczny
+        </a>
+      </div>
+    </div>
+    <div class="lg:w-1/2 lg:h-full">
+      <img src="projekty/browser.png" class="irregular-border lg:h-screen object-cover">
+    </div>
+  </div>
+
+  <div class="lg:flex place-items-center snap-start w-full min-h-screen text-white bg-gray-700 pt-12 sm:pt-0">
+    <div class="w-full lg:h-full text-center pt-10">
+      <h1 class="font-bold text-6xl">Ta strona</h1>
+      <p class="font-semibold pt-10 pl-5 pr-5 lg:pl-96 lg:pr-96 text-xl">
+        Stworzona ręcznie przeze mnie, podczas tworzenia tej strony nauczyłem się
+        wielu nowych właściwości z CSS'a, trochę JavaScripta i projektowania stron,
+        i przede wszystkim TailwindCSS, technologii, która pozwala pominąć tworzenie
+        klas CSS.
+      </p>
+      <div class="inline-flex bg-gray-800 p-2 rounded-xl font-mono items-center mt-4">
+        <img src="loga/html5.png" class="h-4"><span class="ml-2 ">HTML5</span>
+        <div class="bg-slate-500 ml-2 mr-2 w-[2px] h-6"></div>
+        <img src="loga/tailwind.svg" class="h-4"><span class="ml-2">TailwindCSS</span>
+      </div>
+      <div class="font-normal pb-4">
+        <br><a href="https://github.com/LorDawid/LorDawid.github.io" class="transition-colors inline-flex items-center bg-white hover:bg-slate-300 text-black p-1 m-1 rounded">
+          <img src="loga/github-mark.png" class="max-w-4 max-h-4 pr-2"></img>Kod źródłowy
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
